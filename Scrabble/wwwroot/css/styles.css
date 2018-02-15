@@ -1,0 +1,52 @@
+.jumbotron {
+  background-color: #9A2424;
+  height: 30vw;
+  width: 75vw;
+  box-shadow: 0px 0px 35px #000;
+}
+
+body {
+  text-align: center;
+  background-color: #F3E3A8;
+}
+
+img {
+  height: auto;
+  width: 65vw;
+}
+
+a {
+  font-family: 'djb_letter_game_tilesregular';
+  font-size: 5vw;
+
+}
+
+#scoreFont {
+  font-family: luminari;
+  font-size: 6vw;
+}
+
+
+#titleText {
+  color: black;
+  font-family: 'djb_letter_game_tilesregular';
+  margin-top: 0px;
+  text-align: center;
+  font-size: 4vw;
+}
+
+#titleText2 {
+  color: black;
+  font-family: 'djb_letter_game_tilesregular';
+  margin-top: 0px;
+  text-align: center;
+  font-size: 4vw;
+}
+
+
+#9A2424 red
+#AA2621 red
+#F8C180 beige
+#9A2325 maroon
+#FCFCF4 white
+#F3E3A8 tan

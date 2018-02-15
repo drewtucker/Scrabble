@@ -1,0 +1,15 @@
+@{
+Layout = "_Layout";
+}
+
+    <div class="container">
+      <div class="jumbotron">
+        <img src="~/img/scrabble-logo.png" alt="">
+        <h1 id="titleText2"> Score Calculator</h1>
+      </div>
+      @if (Model != null)
+      { <h1 id="wordResult"> @Model.userWord</h1>
+        <h2 id="scoreFont">Scrabble score: @Model</h2>
+      }
+      <a href="/scrabble/form">E</a><a href="/scrabble/form">N</a><a href="/scrabble/form">T</a><a href="/scrabble/form">E</a><a href="/scrabble/form">R</a><p> </p><a href="/scrabble/form">A</a> <p> </p> <a href="/scrabble/form">W</a> <a href="/scrabble/form">O</a> <a href="/scrabble/form">R</a> <a href="/scrabble/form">D</a>
+    </div>

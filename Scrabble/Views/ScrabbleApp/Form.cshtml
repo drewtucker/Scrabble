@@ -1,0 +1,13 @@
+@{
+Layout = "_Layout";
+}
+    <div class="container">
+      <div class="jumbotron">
+        <img src="~/img/scrabble-logo.png" alt="">
+        <h1 id="titleText">Score Calculator</h1>
+      </div>
+    <form action="/scrabble/display" method="post" >
+      <input id="scrabbleForm" pattern="[A-Za-z]{1,15}" title="Please enter an actual word, you rapscallion!"  type="text" name="scrabbleInput" placeholder="Enter a word" required="true">
+      <button type="submit" class="btn btn-success" name="button">Do it!</button>
+    </form>
+  </div>

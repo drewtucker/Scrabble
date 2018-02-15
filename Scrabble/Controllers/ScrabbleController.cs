@@ -10,9 +10,24 @@ namespace ScrabbleApp.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      // List<int> newCoinList = Coin.GetAll();
       return View();
     }
+
+    [HttpGet("/scrabble/form")]
+    public ActionResult Form()
+    {
+      return View();
+    }
+
+    [HttpPost("/scrabble/display")]
+    public ActionResult Display()
+    {
+      Scrabble.DeleteAll();
+      string userInput = (Request.Form["scrabbleInput"]);
+      int result = Scrabble.ScrabbleCalc(userInput);
+      return View("Index", result);
+    }
+
 
 
   }
