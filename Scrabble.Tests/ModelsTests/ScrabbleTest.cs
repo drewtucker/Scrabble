@@ -11,8 +11,8 @@ namespace ScrabbleApp.Tests
     [TestMethod]
     public void TestScrabbleFunction()
     {
-      char[] userInput = new char[] {};
-      int testScore = 0;
+      string userInput = "Scrabble";
+      int testScore = 14;
       Assert.AreEqual(testScore, Scrabble.ScrabbleCalc(userInput));
 
 

@@ -21,6 +21,11 @@ a {
 
 }
 
+#wordResult {
+  font-family: 'djb_letter_game_tilesregular';
+  font-size: 6vw;
+}
+
 #scoreFont {
   font-family: luminari;
   font-size: 6vw;

@@ -23,9 +23,12 @@ namespace ScrabbleApp.Controllers
     public ActionResult Display()
     {
       Scrabble.DeleteAll();
+      Scrabble newScrabble = new Scrabble();
       string userInput = (Request.Form["scrabbleInput"]);
+      Scrabble.SetUserWord(userInput);
+      string userWord = Scrabble.GetUserWord();
       int result = Scrabble.ScrabbleCalc(userInput);
-      return View("Index", result);
+      return View("Index", newScrabble);
     }
 
 
